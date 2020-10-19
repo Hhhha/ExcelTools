@@ -1,6 +1,8 @@
 package reader
 
-import "encoding/json"
+import (
+	"encoding/json"
+)
 
 type RequestInterface interface {
 }
