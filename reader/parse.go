@@ -7,7 +7,8 @@ import (
 type RequestInterface interface {
 }
 type Request struct {
-	File *FileData
+	File     *FileData `json:"file"`
+	CallBack string    `json:"call_back"`
 }
 
 type FileData struct {

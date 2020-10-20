@@ -2,7 +2,6 @@ package settings
 
 import (
 	"fmt"
-
 	"github.com/fsnotify/fsnotify"
 
 	"github.com/spf13/viper"
@@ -20,6 +19,13 @@ type AppConfig struct {
 	*LogConfig   `mapstructure:"log"`
 	*MysqlConfig `mapstructure:"mysql"`
 	*RedisConfig `mapstructure:"redis"`
+}
+type ServerConfig struct {
+	*HttpConfig `mapstructure:"http"`
+}
+
+type HttpConfig struct {
+	Port int `mapstructure:"port"`
 }
 
 type LogConfig struct {
