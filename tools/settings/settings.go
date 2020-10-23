@@ -10,6 +10,7 @@ import (
 var Conf = new(AppConfig)
 
 type AppConfig struct {
+	Mode          string `mapstructure:"mode"`
 	*ServerConfig `mapstructure:"server"`
 	*LogConfig    `mapstructure:"log"`
 	*MysqlConfig  `mapstructure:"mysql"`

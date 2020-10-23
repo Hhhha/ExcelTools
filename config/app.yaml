@@ -1,6 +1,6 @@
 
 # 运行环境， dev：开发环境，prod：生产环境
-env: "dev"
+mode: "dev"
 
 server:
   http:
