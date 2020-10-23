@@ -51,7 +51,7 @@ type RedisConfig struct {
 }
 
 func Init() (err error) {
-	viper.SetConfigFile("./config/server.yaml") // 指定配置文件
+	viper.SetConfigFile("./config/app.yaml") // 指定配置文件
 	//viper.AddConfigPath("./conf/")     // 指定查找配置文件的路径
 	err = viper.ReadInConfig() // 读取配置信息
 	if err != nil {
