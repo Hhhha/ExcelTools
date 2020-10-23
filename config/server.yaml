@@ -1,4 +1,0 @@
-server:
-  # http 客户端
-  http:
-    port: 8080  #监听端口

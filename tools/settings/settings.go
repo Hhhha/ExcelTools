@@ -10,15 +10,10 @@ import (
 var Conf = new(AppConfig)
 
 type AppConfig struct {
-	Name         string `mapstructure:"name"`
-	Mode         string `mapstructure:"mode"`
-	Version      string `mapstructure:"version"`
-	Port         int    `mapstructure:"port"`
-	StartTime    string `mapstructure:"start_time"`
-	MachineID    int64  `mapstructure:"machine_id"`
-	*LogConfig   `mapstructure:"log"`
-	*MysqlConfig `mapstructure:"mysql"`
-	*RedisConfig `mapstructure:"redis"`
+	*ServerConfig `mapstructure:"server"`
+	*LogConfig    `mapstructure:"log"`
+	*MysqlConfig  `mapstructure:"mysql"`
+	*RedisConfig  `mapstructure:"redis"`
 }
 type ServerConfig struct {
 	*HttpConfig `mapstructure:"http"`
