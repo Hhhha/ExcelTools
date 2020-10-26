@@ -4,7 +4,8 @@ mode: "dev"
 
 server:
   http:
-    port: 8080
+    start: true
+    port: 8090
 log:
   level: "debug"
   filename: "web_app.log"
